@@ -36,24 +36,3 @@ float float_multiplicacion(float a, float b) {
     return f_res.f;
 }
 
-int main() {
-    // 1. Declarar las variables sin valores iniciales
-    float x, y;
-
-    // 2. Imprimir un mensaje en pantalla pidiendo el primer número
-    printf("Ingresa el primer numero a multiplicar: ");
-
-    // 3. Leer el valor ingresado y guardarlo en 'x'.
-    // Nota el uso de "%f" para float y "&x" para pasar la dirección de la variable.
-    scanf("%f", &x);
-
-    // 4. Repetir el proceso para el segundo número
-    printf("Ingresa el segundo numero a multiplicar: ");
-    scanf("%f", &y);
-
-    // 5. Llamar a la función y mostrar el resultado
-    printf("\nCalculando...\n");
-    printf("Resultado (Nuestro Algoritmo): %.2f * %.2f = %.2f\n", x, y, float_multiplicacion(x, y));
-
-    return 0;
-}
