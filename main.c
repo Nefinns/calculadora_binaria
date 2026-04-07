@@ -19,8 +19,8 @@ int main() {
 
     res.un = restaF(n1.un, n2.un);
 
-    printf("\n Resta de %f - %f:\n", n1.fl, n2.fl);
-    printf("Resultado : %f\n", res.fl);
+    printf("\n Resta de %.4f - %.4f:\n", n1.fl, n2.fl);
+    printf("Resultado : %.4f\n", res.fl);
     
     return 0;
 }
