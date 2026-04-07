@@ -53,7 +53,7 @@ int main() {
 
     // 5. Llamar a la función y mostrar el resultado
     printf("\nCalculando...\n");
-    printf("Resultado (Nuestro Algoritmo): %f * %f = %f\n", x, y, float_multiplicacion(x, y));
+    printf("Resultado (Nuestro Algoritmo): %.2f * %.2f = %.2f\n", x, y, float_multiplicacion(x, y));
 
     return 0;
 }
