@@ -1,3 +1,4 @@
+#include "operaciones.h"
 #include <stdint.h>
 
 // usamos un union para tener la memoria apuntada a un flotante 
@@ -80,4 +81,22 @@ uint32_t restaF(uint32_t nu1, uint32_t nu2){
 
     // empaquetar todo: movemos el signo al bit 31, el exponente al bit 23 y apagamos el '1' implícito de la mantisa
     return (sigR << 31) | ((expR & 0xFF) << 23) | (mantR & 0x7FFFFF);
+}
+
+void ejecucion(){
+    FloatConversion n1, n2, res;
+
+    printf(" Restador de Punto Flotante IEEE 754 \n\n");
+    
+    printf("Ingresa el primer numero: ");
+    scanf("%f", &n1.fl);
+    
+    printf("Ingresa el segundo numero: ");
+    scanf("%f", &n2.fl);
+
+    res.un = restaF(n1.un, n2.un);
+
+    printf("\n Resta de %.4f - %.4f:\n", n1.fl, n2.fl);
+    printf("Resultado : %.4f\n", res.fl);
+    
 }
