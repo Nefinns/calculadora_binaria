@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1775609913 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\division.c
+	<stdio.h>
+	<stdint.h>
+	"operaciones.h"
+
+1775614357 c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\operaciones.h
+	<stdint.h>
+
+1775614324 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\multiplicacion.c
+	<stdio.h>
+	<stdint.h>
+	"operaciones.h"
+
+1775614383 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\resta.c
+	"operaciones.h"
+	<stdint.h>
+	<stdio.h>
+
+1775614410 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\suma.c
+	"operaciones.h"
+	<stdint.h>
+	<stdio.h>
+
+1775615363 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"operaciones.h"
+
