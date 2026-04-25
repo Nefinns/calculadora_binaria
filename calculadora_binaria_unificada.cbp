@@ -35,6 +35,9 @@
 		<Unit filename="suma.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="traductor_binario.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

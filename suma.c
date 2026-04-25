@@ -133,13 +133,24 @@ void mostrar_resultado_suma()
     float num1= 0,num2 = 0,result_suma = 0;
 
     printf("\nEste es un sumador binario de n%cmeros con punto decimal.\n",163);
-    printf("Ingrese el primer n%cmero: ",163);
+    printf("\nIngrese el primer n%cmero: ",163);
     scanf("%f",&num1);
     printf("\nIngrese el segundo n%cmero: ",163);
     scanf("%f",&num2);
 
+    printf("\nEntradas:\nDecimal: %.4f + %.4f",num1,num2);
+    printf("\nBinario (32 bits):");
+    printf("\n[S: 1 bit] [Exponente: 8 bits] [Mantisa: 23 bits]\n");
+
+    traducir_binario(num1);
+    printf(" + ");
+    traducir_binario(num2);
+
     result_suma = sumador_bits(num1,num2);
-    printf("\nEl resultado de la suma es: %.4f",result_suma);
+    printf("\n\nEl resultado de la suma es:\n\n%.4f en decimal\n\n",result_suma);
+    printf("[S: 1 bit] [Exponente: 8 bits] [Mantisa: 23 bits]\n");
+    traducir_binario(result_suma);
+    printf(" en binario");
 }
 
 

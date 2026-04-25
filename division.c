@@ -16,11 +16,7 @@ typedef union {
 
 // --- ALGORITMO DE DIVISIÓN DE PUNTO FLOTANTE ---
 float float_division(float a, float b) {
-    // Manejo de división por cero
-    if (b == 0.0f) {
-        printf("Error: No se puede dividir entre cero.\n");
-        return 0.0f; // Retornamos 0 por simplicidad (el estándar IEEE 754 retornaría Infinito)
-    }
+
     // Caso base: 0 dividido entre cualquier cosa es 0
     if (a == 0.0f) return 0.0f;
 
@@ -66,7 +62,25 @@ void mostrar_division() {
     printf("Ingresa el divisor (entre cuanto lo vas a dividir): ");
     scanf("%f", &y);
 
-    printf("\nCalculando...\n");
-    printf("Resultado (Hardware): %.2f / %.2f = %.2f\n", x, y, x / y);
-    printf("Resultado (Nuestro Algoritmo): %.2f / %.2f = %.4f\n", x, y, float_division(x, y));
+    printf("\nEntradas:\nDecimal: %.4f / %.4f",x,y);
+    printf("\nBinario (32 bits):");
+    printf("\n[S: 1 bit] [Exponente: 8 bits] [Mantisa: 23 bits]\n");
+
+    traducir_binario(x);
+    printf(" / ");
+    traducir_binario(y);
+
+    printf("\n\nCalculando...\n");
+
+    if(y == 0)
+    {
+        printf("\nError: No se puede dividir entre cero, intente con otro dato");
+    }
+    else
+    {
+    printf("\nResultado:\n\n%.4f en decimal\n\n",float_division(x, y));
+    printf("[S: 1 bit] [Exponente: 8 bits] [Mantisa: 23 bits]\n");
+    traducir_binario(float_division(x,y));
+    printf(" en binario");
+    }
 }

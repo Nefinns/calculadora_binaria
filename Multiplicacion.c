@@ -53,9 +53,21 @@ void mostrar_multiplicacion()
     printf("Ingresa el segundo numero a multiplicar: ");
     scanf("%f", &y);
 
+    printf("\nEntradas:\nDecimal: %.4f * %.4f",x,y);
+    printf("\nBinario (32 bits):");
+    printf("\n[S: 1 bit] [Exponente: 8 bits] [Mantisa: 23 bits]\n");
+
+    traducir_binario(x);
+    printf(" * ");
+    traducir_binario(y);
+
     // 5. Llamar a la función y mostrar el resultado
     printf("\nCalculando...\n");
-    printf("Resultado (Nuestro Algoritmo): %.2f * %.2f = %.2f\n", x, y, float_multiplicacion(x, y));
+    printf("Resultado:\n%.4f en decimal\n\n", float_multiplicacion(x, y));
+
+    printf("[S: 1 bit] [Exponente: 8 bits] [Mantisa: 23 bits]\n");
+    traducir_binario(float_multiplicacion(x,y));
+    printf(" en binario");
 
 }
 

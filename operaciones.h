@@ -17,4 +17,6 @@ void mostrar_multiplicacion();
 float float_division(float a, float b);
 void mostrar_division();
 
+void traducir_binario(float f);
+
 #endif // OPERACIONES_H_INCLUDED
