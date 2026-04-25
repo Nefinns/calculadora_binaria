@@ -4,20 +4,20 @@
 	<stdint.h>
 	"operaciones.h"
 
-1775614357 c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\operaciones.h
+1777077279 c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\operaciones.h
 	<stdint.h>
 
-1775614324 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\multiplicacion.c
+1777083781 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\multiplicacion.c
 	<stdio.h>
 	<stdint.h>
 	"operaciones.h"
 
-1775614383 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\resta.c
+1777082996 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\resta.c
 	"operaciones.h"
 	<stdint.h>
 	<stdio.h>
 
-1775614410 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\suma.c
+1777082660 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\suma.c
 	"operaciones.h"
 	<stdint.h>
 	<stdio.h>
@@ -27,4 +27,9 @@
 	<stdlib.h>
 	<stdbool.h>
 	"operaciones.h"
+
+1777079358 source:c:\users\chuym\onedrive\arquitectura de computadoras\calculadora_binaria_unificada\traductor_binario.c
+	"operaciones.h"
+	<stdio.h>
+	<stdlib.h>
 

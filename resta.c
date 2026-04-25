@@ -87,7 +87,7 @@ uint32_t restaF(uint32_t nu1, uint32_t nu2){
 void ejecucion(){
     FloatConversion n1, n2, res;
 
-    printf(" Restador de Punto Flotante IEEE 754 \n\n");
+    printf("Restador de Punto Flotante IEEE 754 \n\n");
 
     printf("Ingresa el primer numero: ");
     scanf("%f", &n1.fl);
@@ -95,9 +95,17 @@ void ejecucion(){
     printf("Ingresa el segundo numero: ");
     scanf("%f", &n2.fl);
 
+    printf("\nEntradas:\nDecimal: %.4f - %.4f",n1.fl,n2.fl);
+    printf("\nBinario (32 bits):");
+    printf("\n[S: 1 bit] [Exponente: 8 bits] [Mantisa: 23 bits]\n");
+    traducir_binario(n1.fl);
+    printf(" - ");
+    traducir_binario(n2.fl);
+
     res.un = restaF(n1.un, n2.un);
 
-    printf("\n Resta de %.4f - %.4f:\n", n1.fl, n2.fl);
-    printf("Resultado : %.4f\n", res.fl);
-
+    printf("\nResultado :\n\n%.4f en decimal\n\n", res.fl);
+    printf("[S: 1 bit] [Exponente: 8 bits] [Mantisa: 23 bits]\n");
+    traducir_binario(res.fl);
+    printf(" en binario");
 }
